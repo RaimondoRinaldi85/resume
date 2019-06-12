@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    font-family: 'Montserrat';
+}
+
+nav {
+    height: 40px;
+    line-height: 40px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: 40px;
+    line-height: 40px;
+}
+
+nav .button-collapse i {
+    height: 40px;
+    line-height: 40px;
+}
+
+nav .brand-logo { 
+    font-size: 1.6rem; 
+}
+
+.navbar-fixed{
+    height: 40px;
+}
+
+
+#landing{
+    height: 100vh;
+    background-image: url('../img/img1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+#mainText{
+    margin-top: 50vh;
+}
+
+.type{
+    display: flex;
+    flex-direction: column;}
+   
+   .type h1, h2{
+        font-weight: 400;
+        margin: 0.4rem;
+        
+    }
+    
+    .type h1{
+        font-size: 24px;
+        color: #d1d1d1;
+    }
+    
+    .type h2{
+        font-size: 20px;
+        color: white;
+    }
+    
+    .type .txt-type > .txt {
+        border-right: 0.2rem solid #fff;
+    }
+    
+    #about p {
+        font-size: 18px;
+    }
+
+    /* START FLIP CARD */
+
+.middle {
+	position: absolute;
+	top: 33%;
+	left: 50%;
+    transform: translate(-50%, -50%);   
+   
+}
+
+.f-card {
+	cursor: pointer;
+	width: 17em;
+    height: 25em; 
+}
+
+.front,
+.back {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	transition: transform .6s linear;
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px #333;
+}
+    
+.front img {
+	height: 100%;
+}
+.front {
+	transform: perspective(600px) rotateY(0deg);
+}
+.back {
+	background: #f1f1f1;
+	transform: perspective(600px) rotateY(180deg);
+}
+.back-content {
+	color: black;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+}
+.sm {
+	margin: 20px 0;
+}
+.sm a {
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-size: 25px;
+	transition: 0.4s;
+    border-radius: 50%;
+    text-decoration: none;
+    
+}
+.sm a:hover {
+	background: #e87222;
+	color: #d1d1d1;
+}
+.f-card:hover > .front {
+	transform: perspective(600px) rotateY(-180deg);
+}
+.f-card:hover > .back {
+	transform: perspective(600px) rotateY(0deg);
+}
+
+/* END FLIP CARD */
+
+#exp{
+    background-image: url('../img/img2.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+#edu .fas{
+    padding: 3rem;
+}
+
+
+ .icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+    
+ .icon p{
+        font-size: 21px;
+        color: #d1d1d1;
+        min-width: 50%;
+    }
+
+
+   .swiper-container {
+    
+width: 100%;
+height: 50%;
+z-index: 0;
+
+}
+ .swiper-slide {
+    padding-top: 5rem;
+text-align: center;
+font-size: 18px;
+background: #303437;
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+flex-direction: column;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+
+}
+
+.swiper-slide p{
+    font-size: 21px;
+    color: #d1d1d1;
+    min-width: 50%;
+}
+
+
+
+ .swiper-button-next,
+.swiper-button-prev{
+   margin: 20%;
+   opacity: 0.5;
+ 
+}
+
+.social .fab {
+    padding-right: .4rem;
+    color: #fff;
+}
+.social .fas {
+    padding-right: .4rem;
+    color: #fff;
+}
+
+.social a{
+    color: #fff;
+}
+
+#showcase img{
+    width: 300px;
+}
+
+a{
+    color: #e87222;
+}
