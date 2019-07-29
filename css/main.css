@@ -73,7 +73,7 @@ nav .brand-logo {
 
 .middle {
 	position: absolute;
-	top: 33%;
+	top: 35%;
 	left: 50%;
     transform: translate(-50%, -50%);   
    
@@ -87,8 +87,8 @@ nav .brand-logo {
 
 .front,
 .back {
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: 90%;
 	overflow: hidden;
 	backface-visibility: hidden;
 	position: absolute;
@@ -154,6 +154,13 @@ nav .brand-logo {
 
 #edu .fas{
     padding: 3rem;
+}
+
+#edu{
+    background-image: url('../img/bgedu.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
